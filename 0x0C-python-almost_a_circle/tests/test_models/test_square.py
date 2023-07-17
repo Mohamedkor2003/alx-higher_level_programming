@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # test_square.py
+# Brennan D Baraban <375@holbertonschool.com>
 """Defines unittests for models/square.py.
 
 Unittest classes:
@@ -14,7 +15,6 @@ Unittest classes:
     TestSquare_update_kwargs - line 538
     TestSquare_to_dictionary - 640
 """
-
 import io
 import sys
 import unittest
@@ -422,6 +422,7 @@ class TestSquare_stdout(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.display(1)
 
+
 class TestSquare_update_args(unittest.TestCase):
     """Unittests for testing update args method of the Square class."""
 
@@ -532,6 +533,7 @@ class TestSquare_update_args(unittest.TestCase):
         s = Square(10, 10, 10, 10)
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             s.update(89, 1, "invalid", "invalid")
+
 
 class TestSquare_update_kwargs(unittest.TestCase):
     """Unittests for testing update kwargs method of Square class."""
